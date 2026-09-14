@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <h1>Astrology Insights</h1>
+
+            <form class="astrology-form">
+                <div class="field-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+                </div>
+
+                <div class="field-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+                </div>
+
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input type="number" id="dateOfBirth" name="dateOfBirth" min="1" max="31" placeholder="DD">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="month">Month</label>
+                        <select id="month" name="month">
+                            <option value="">Select</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="year">Year</label>
+                        <input type="text" id="year" name="year" inputmode="numeric" maxlength="4" placeholder="YYYY">
+                    </div>
+                </div>
+
+                <button type="submit">Go Insights</button>
+            </form>
+
+            <div class="result" id="result">
+
+            </div>
+        </div>
+    </main>
+    <script src="first.js"></script>
+</body>
+</html>

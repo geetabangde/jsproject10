@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: black;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  animation: grow 0.5s forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
